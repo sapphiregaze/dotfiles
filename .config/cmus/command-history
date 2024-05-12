@@ -1,0 +1,23 @@
+wq
+q
+shell echo "hi"
+shell
+bind -f common d win-remove
+d
+delete
+clear 
+player-next
+add ~/Music/Cold.mp3
+search-start
+search-next
+clear
+add ~/Music/Liana Flores - Rises The Moon.mp3
+save
+pl-create calming
+pl-create
+c
+cd ~/Music/
+add ~/Music/
+browser-up 
+colorscheme green
+colorscheme
