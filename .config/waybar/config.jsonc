@@ -15,7 +15,7 @@
 	"modules-right": ["custom/left","tray","network","clock","custom/right"],
 
  
-   "network": {
+    "network": {
         "tooltip": true,
         "format-wifi": "<span foreground='#FF8B49'> {bandwidthDownBytes}</span> <span foreground='#FF6962'> {bandwidthUpBytes}</span>",
         "format-ethernet": "<span foreground='#FF8B49'> {bandwidthDownBytes}</span> <span foreground='#FF6962'> {bandwidthUpBytes}</span>",
@@ -25,19 +25,19 @@
         "tooltip-format-disconnected": "Disconnected",
         "interval": 2,
         "on-click-right": "~/.config/eww/scripts/network.sh"
-  },
+    },
 
 
-     "temperature": {
+    "temperature": {
         "thermal-zone": 1,
         "critical-threshold": 80,
         "format-critical": " {temperatureC}°C",
         "format": " {temperatureC}°C"
     },
 
-     "custom/rofi": {
+    "custom/rofi": {
         "format": "  {}",
-        "on-click": "~/.config/hypr/scripts/rofi-launcher.sh & sleep 0.2; hyprctl dispatch focuswindow \"^(Rofi)\""
+        "on-click": "~/.local/bin/scripts/rofi-launcher.sh & sleep 0.2; hyprctl dispatch focuswindow \"^(Rofi)\""
 	},
 
     "hyprland/workspaces": {
@@ -97,20 +97,20 @@
 
 
     "tray": {
-      "icon-size": 20,
+        "icon-size": 20,
         "spacing": 9
     },
 
 
-  "clock": {
+    "clock": {
         "format": " {:%H:%M %p   %a, %b %e}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "on-click": "~/.config/eww/scripts/toggle_control_center.sh"
-      },
+    },
 
 
-   "backlight": {
-    "device": "intel_backlight",
+    "backlight": {
+        "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["󰃞", "󰃟", "󰃠"],
         "on-scroll-up": "brightnessctl set 1%+",
